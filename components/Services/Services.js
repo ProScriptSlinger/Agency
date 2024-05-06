@@ -17,22 +17,22 @@ const servicesList = [
   {
     title: "Digital Solutions",
     desc: "Guiding companies in digital evolution with tailored consultations for enhanced efficiency and competitiveness.",
-    img: "/images/services/digital.PNG",
+    img: "/images/services/digital.png",
   },
   {
     title: "Innovation Services",
     desc: "Driving progress through collaborative innovation, creative solutions, and disruptive ideas.",
-    img: "/images/services/innovation.PNG",
+    img: "/images/services/innovation.png",
   },
   {
     title: "Performance Enhancement",
     desc: "Customizing solutions through advanced tech development and seamless integration for optimal performance.",
-    img: "/images/services/development.PNG",
+    img: "/images/services/development.png",
   },
   {
     title: "Opportunity Discovery",
     desc: "Strategically spotting growth opportunities for adaptability and competitiveness.",
-    img: "/images/services/opportunities.PNG",
+    img: "/images/services/opportunities.png",
   },
   {
     title: "Creative Implementation",
@@ -42,7 +42,7 @@ const servicesList = [
   {
     title: "Tech Solutions",
     desc: "Maximizing tech performance with scalable solutions for efficiency and future readiness.",
-    img: "/images/services/technological.PNG",
+    img: "/images/services/technological.png",
   },
 ];
 
