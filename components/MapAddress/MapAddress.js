@@ -27,7 +27,7 @@ function MapContainer(props) {
       }}
       zoom={14}
     >
-      <Marker position={{ lat: 14.634915, lng: -90.506882 }} />
+      <Marker position={{ lat: 14.3322, lng: -91.0247 }} />
     </Map>
   );
 }
@@ -76,34 +76,7 @@ function MapAdress() {
                     </Grid>
                     <Grid item xs={12}>
                       <LocationIcon className={classes.icon} />
-                      Guatemala street no.14 Block A
-                    </Grid>
-                  </Grid>
-                </Paper>
-              </ScrollAnimation>
-              <ScrollAnimation
-                animateOnce
-                animateIn="fadeInLeftShort"
-                offset={-100}
-                delay={500}
-                duration={0.3}
-              >
-                <Paper className={classes.paper}>
-                  <Typography variant="h6" display="block">
-                    {t("agency-landing.office_branch")}
-                  </Typography>
-                  <Grid container>
-                    <Grid item sm={6} xs={12}>
-                      <PhoneIcon className={classes.icon} />
-                      +502 53720248
-                    </Grid>
-                    <Grid item sm={6} xs={12}>
-                      <EmailIcon className={classes.icon} />
-                      support@ahau-x.com
-                    </Grid>
-                    <Grid item xs={12}>
-                      <LocationIcon className={classes.icon} />
-                      Guatemala street Block C - Vestibullum Building
+                      Guatemala, Escuintla, Santa Lucía Cotzumalguapa
                     </Grid>
                   </Grid>
                 </Paper>

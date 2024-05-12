@@ -39,17 +39,22 @@
     "banner_title": "The brain is a lamp to be lit, not a glass to be filled.",
     "banner_subtitle": "We are a tech company focused on blockchain and AI, helping clients build custom solutions to real-world problems.",
     "banner_button": "write to us",
-    "about_title": "About us",
+    "about_title": "Our Values",
     "about_subtitle": "Through our large capacity we dare to say we are different.",
     "about_employee": "employee",
     "about_projects": "projects",
     "about_client": "clients",
+    "about_passion": "Passion",
+    "about_determination": "Determination",
+    "about_sustainability": "Sustainability",
+    "about_creativity": "Creativity",
+    "about_teamwork": "Teamwork",
     "about_quote": "It leaves a taste that's bittersweet That's called the blues",
     "services_title": "Our Services",
     "services_button": "see detail",
     "expertise_title": "Our Expertise",
     "expertise_subtitle": "What are you expect from us?",
-    "expertise_paragraph": "We offer dedicated on-shore and near-shore teams for your projects, providing flexible human resources whenever you need them.",
+    "expertise_paragraph": "We offer innovative solutions using cutting-edge technology to take your projects to the next level.",
     "testimonial_title": "client testimonials",
     "case_title": "Case studies",
     "cta_title": "Ready to get started?",
@@ -58,6 +63,6 @@
     "office_title": "Our Office",
     "office_head": "Head Quarter",
     "office_branch": "Branch Office",
-    "footer_paragraph": "We offer dedicated on-shore and near-shore teams for your projects, providing flexible human resources whenever you need them."
+    "footer_paragraph": "We offer innovative solutions using cutting-edge technology to take your projects to the next level."
   }
 }

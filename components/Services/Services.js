@@ -15,34 +15,49 @@ import DotsParallax from "../Parallax/Dots";
 
 const servicesList = [
   {
-    title: "Digital Solutions",
-    desc: "Guiding companies in digital evolution with tailored consultations for enhanced efficiency and competitiveness.",
-    img: "/images/services/digital.png",
+    title: "Kaax",
+    desc: "An artificial intelligence system designed for the agricultural sector, currently in pilot testing phase. Interested companies can contact us to participate or learn more.",
+    img: "/images/services/no-one-cares.JPG",
   },
   {
-    title: "Innovation Services",
-    desc: "Driving progress through collaborative innovation, creative solutions, and disruptive ideas.",
-    img: "/images/services/innovation.png",
+    title: "Hunab Hub",
+    desc: "A visitor management system ideal for high-traffic areas such as condominiums and event venues, enhancing control and security.",
+    img: "/images/services/hal-gatewood.JPG",
   },
   {
-    title: "Performance Enhancement",
-    desc: "Customizing solutions through advanced tech development and seamless integration for optimal performance.",
-    img: "/images/services/development.png",
+    title: "Kaax Analytics",
+    desc: " A data analytics tool that provides detailed insights for accurate and informed decision-making.",
+    img: "/images/services/path-digital.JPG",
   },
   {
-    title: "Opportunity Discovery",
-    desc: "Strategically spotting growth opportunities for adaptability and competitiveness.",
-    img: "/images/services/opportunities.png",
+    title: "IoT Implementation and Consulting",
+    desc: " Offering both implementation and consulting services for Internet of Things (IoT) solutions to enable smart, connected environments for businesses.",
+    img: "/images/services/shubham-dhage.JPG",
   },
   {
-    title: "Creative Implementation",
-    desc: "Implementing innovative solutions through collaborative problem-solving and creative integration.",
-    img: "/images/services/creative.jpg",
+    title: "Blockchain Applications",
+    desc: "Development of blockchain-based applications ensuring secure and transparent transactions across various fields.",
+    img: "/images/services/thisisengineering.JPG",
   },
   {
-    title: "Tech Solutions",
-    desc: "Maximizing tech performance with scalable solutions for efficiency and future readiness.",
-    img: "/images/services/technological.png",
+    title: "Software Development (Native Mobile)",
+    desc: "Design and development of custom mobile applications for iOS and Android operating systems, maximizing performance and features.",
+    img: "/images/services/farzad.JPG",
+  },
+  {
+    title: "UX/UI Design",
+    desc: "User-focused design ensuring that digital products are intuitive, aesthetically pleasing, and easy to navigate.",
+    img: "/images/services/ux-indonesia.JPG",
+  },
+  {
+    title: "Consulting",
+    desc: "Consulting services in technology and innovation to help companies implement effective digital solutions and improve processes.",
+    img: "/images/services/luke-southern.JPG",
+  },
+  {
+    title: "Technical Support",
+    desc: "Technical assistance and maintenance for systems and software, ensuring continuous and efficient operations for your business.",
+    img: "/images/services/christina-wocintechchat-com.JPG",
   },
 ];
 

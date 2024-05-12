@@ -1,25 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import ButtonBase from '@mui/material/ButtonBase';
-import Typography from '@mui/material/Typography';
-import useStyles from './cards-style';
+import React from "react";
+import PropTypes from "prop-types";
+import ButtonBase from "@mui/material/ButtonBase";
+import Typography from "@mui/material/Typography";
+import useStyles from "./cards-style";
 
 function Case(props) {
   const { classes, cx } = useStyles();
-  const {
-    bg,
-    logo,
-    title,
-    desc,
-    size,
-    simple,
-    openPopup
-  } = props;
-  const setSize = sizeProp => {
+  const { bg, logo, title, desc, size, simple, openPopup } = props;
+  const setSize = (sizeProp) => {
     switch (sizeProp) {
-      case 'small':
+      case "small":
         return classes.small;
-      case 'big':
+      case "big":
         return classes.big;
       default:
         return classes.medium;
@@ -60,14 +52,14 @@ Case.propTypes = {
   title: PropTypes.string.isRequired,
   size: PropTypes.string,
   simple: PropTypes.bool,
-  openPopup: PropTypes.func
+  openPopup: PropTypes.func,
 };
 
 Case.defaultProps = {
-  bg: '',
-  size: 'medium',
+  bg: "",
+  size: "medium",
   simple: false,
-  openPopup: () => {}
+  openPopup: () => {},
 };
 
 export default Case;

@@ -1,80 +1,73 @@
-import React, { useState } from 'react';
-import Lightbox from 'react-18-image-lightbox';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import { useTheme } from '@mui/material/styles';
-import Grid from '@mui/material/Grid';
-import ScrollAnimation from 'react-scroll-animation-wrapper';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import { useTranslation } from 'next-i18next';
-import imgApi from '~/public/images/imgAPI';
-import CaseCard from '../Cards/Case';
-import useStyles from './case-study-style';
-import useTitle from '../Title/title-style';
+import React, { useState } from "react";
+import Lightbox from "react-18-image-lightbox";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material/styles";
+import Grid from "@mui/material/Grid";
+import ScrollAnimation from "react-scroll-animation-wrapper";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemText from "@mui/material/ListItemText";
+import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+import { useTranslation } from "next-i18next";
+import imgApi from "~/public/images/imgAPI";
+import CaseCard from "../Cards/Case";
+import useStyles from "./case-study-style";
+import useTitle from "../Title/title-style";
 
-const categories = ['corporate', 'advertising', 'marketing', 'government', 'creative'];
+const categories = [
+  "Smart City IoT Implementation",
+  "Predictive Maintenance AI",
+  "Blockchain Supply Chain",
+  "Web Development Redesign",
+  "Mobile App Gamification",
+];
 const caseData = [
   {
-    bg: imgApi.agency[5],
-    logo: '/images/logos/mobile.png',
-    title: 'Donec commodo convallis ligula',
-    desc: 'Vestibulum consequat hendrerit',
-    size: 'small',
+    bg: "/images/studies/blockchain.jpg",
+    logo: "/images/Isotipo_v4.png",
+    title: "Blockchain Supply Chain",
+    desc: "",
+    size: "small",
+    simple: false,
   },
   {
-    logo: '/images/logos/coin.png',
-    title: 'Donec commodo convallis ligula',
-    desc: 'Vestibulum consequat hendrerit',
-    size: 'small',
-    simple: true,
+    bg: "/images/studies/redesign.jpg",
+    logo: "/images/Isotipo_v4.png",
+    title: "Web Development Redesign",
+    desc: "Enhance user experience and boost conversions through website redesign.",
+    size: "medium",
   },
   {
-    logo: '/images/logos/starter.png',
-    title: 'Donec commodo convallis ligula',
-    desc: 'Vestibulum consequat hendrerit',
-    size: 'medium',
-    simple: true,
+    bg: "/images/studies/gamification.jpg",
+    logo: "/images/lIsotipo_v4.png",
+    title: "Mobile App Gamification",
+    desc: "Motivate users with gamified fitness app for health goals.",
+    size: "medium",
   },
   {
-    bg: imgApi.agency[6],
-    logo: '/images/logos/profile.png',
-    title: 'Donec commodo convallis ligula',
-    desc: 'Vestibulum consequat hendrerit',
-    size: 'medium',
+    bg: "/images/studies/city.jpg",
+    logo: "/images/Isotipo_v4.png",
+    title: "Smart City IoT Implementation",
+    desc: "Optimize energy use and enhance services with IoT sensors in smart cities.",
+    size: "big",
   },
   {
-    bg: imgApi.agency[7],
-    logo: '/images/logos/architect.png',
-    title: 'Donec commodo convallis ligula',
-    desc: 'Vestibulum consequat hendrerit',
-    size: 'medium',
-  },
-  {
-    bg: imgApi.agency[8],
-    logo: '/images/logos/fashion.png',
-    title: 'Donec commodo convallis ligula',
-    desc: 'Vestibulum consequat hendrerit',
-    size: 'big',
-  },
-  {
-    bg: imgApi.agency[9],
-    logo: '/images/logos/cloud.png',
-    title: 'Donec commodo convallis ligula',
-    desc: 'Vestibulum consequat hendrerit',
-    size: 'big',
+    bg: "/images/studies/ai.jpg",
+    logo: "/images/Isotipo_v4.png",
+    title: "Predictive Maintenance AI",
+    desc: "Reduce downtime and costs with AI-based predictive maintenance.",
+    size: "big",
   },
 ];
 
 function CaseStudies() {
   // Theme breakpoints
   const theme = useTheme();
-  const isDesktop = useMediaQuery(theme.breakpoints.up('lg'));
+  const isDesktop = useMediaQuery(theme.breakpoints.up("lg"));
 
   // Translation Function
-  const { t } = useTranslation('common');
+  const { t } = useTranslation("common");
 
   // Image Gallery
   const [photoIndex, setPhotoIndex] = useState(0);
@@ -82,7 +75,7 @@ function CaseStudies() {
 
   const { classes, cx } = useStyles();
   const { classes: title } = useTitle();
-  const [selectedIndex, setSelectedIndex] = useState('corporate');
+  const [selectedIndex, setSelectedIndex] = useState("corporate");
 
   function handleListItemClick(event, index) {
     console.log(index);
@@ -105,7 +98,7 @@ function CaseStudies() {
   const renderCard = (item, index) => (
     <CaseCard
       key={index.toString()}
-      bg={item.bg || ''}
+      bg={item.bg || ""}
       logo={item.logo}
       title={item.title}
       desc={item.desc}
@@ -120,7 +113,10 @@ function CaseStudies() {
       {open && (
         <Lightbox
           mainSrc={caseData[photoIndex].bg || caseData[photoIndex].logo}
-          nextSrc={caseData[(photoIndex + 1) % caseData.length].bg || caseData[(photoIndex + 1) % caseData.length].logo}
+          nextSrc={
+            caseData[(photoIndex + 1) % caseData.length].bg ||
+            caseData[(photoIndex + 1) % caseData.length].logo
+          }
           prevSrc={caseData[(photoIndex + 1) % caseData.length].logo || null}
           onCloseRequest={() => setOpen(false)}
           onMovePrevRequest={onMovePrevRequest}
@@ -139,15 +135,18 @@ function CaseStudies() {
             >
               <div>
                 <Typography variant="h4" className={title.primary}>
-                  {t('agency-landing.case_title')}
+                  {t("agency-landing.case_title")}
                 </Typography>
                 <List component="nav">
                   {categories.map((item, index) => (
                     <ListItem
                       button
                       key={index.toString()}
-                      className={cx(classes.filter, selectedIndex === item && classes.active)}
-                      onClick={event => handleListItemClick(event, item)}
+                      className={cx(
+                        classes.filter,
+                        selectedIndex === item && classes.active
+                      )}
+                      onClick={(event) => handleListItemClick(event, item)}
                     >
                       <ListItemText primary={item} />
                     </ListItem>
@@ -169,7 +168,7 @@ function CaseStudies() {
                   >
                     <div>
                       {caseData.map((item, index) => {
-                        if (item.size === 'small') {
+                        if (item.size === "small") {
                           return renderCard(item, index);
                         }
                         return false;
@@ -187,7 +186,7 @@ function CaseStudies() {
                   >
                     <div>
                       {caseData.map((item, index) => {
-                        if (item.size === 'medium') {
+                        if (item.size === "medium") {
                           return renderCard(item, index);
                         }
                         return false;
@@ -205,7 +204,7 @@ function CaseStudies() {
                   >
                     <div>
                       {caseData.map((item, index) => {
-                        if (item.size === 'big') {
+                        if (item.size === "big") {
                           return renderCard(item, index);
                         }
                         return false;

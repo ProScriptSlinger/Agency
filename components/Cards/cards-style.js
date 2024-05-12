@@ -4,19 +4,14 @@ import frameDeco from "~/public/images/decoration/frame-deco.png";
 const useStyles = makeStyles({ uniqId: "cards" })(
   (theme, _params, classes) => ({
     text: {},
-    title: {},
-    truncatedText: {
-      overflow: "hidden",
-      textOverflow: "ellipsis",
-      // whiteSpace: "nowrap",
-      // maxHeight: "150px", // Adjust the max width as needed
-    },
+    title: { height: "64px" },
+    truncatedText: {},
     /* Default Card */
     defaultCard: {
       direction: "ltr",
       borderRadius: 12,
       width: 240,
-      height: 350,
+      height: 400,
       padding: theme.spacing(3, 2),
       margin: theme.spacing(3, 1),
       "& figure": {
@@ -34,8 +29,8 @@ const useStyles = makeStyles({ uniqId: "cards" })(
         marginBottom: theme.spacing(2),
       },
       "& p": {
-        height: 90,
-        overflow: "hidden",
+        // height: 90,
+        // overflow: "hidden",
         marginBottom: theme.spacing(3),
       },
     },

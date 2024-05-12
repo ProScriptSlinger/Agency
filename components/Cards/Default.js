@@ -15,8 +15,8 @@ function Services(props) {
           background: `url(${img}) center/100% no-repeat`,
         }}
       />
-      <div className={`${classes.text} ${classes.truncatedText}`}>
-        <Typography display="block" variant="h6" style={{ height: "60px" }}>
+      <div className={`${classes.text}`}>
+        <Typography display="block" variant="h6" className={classes.title}>
           {title}
         </Typography>
         <Typography component="p">{desc}</Typography>

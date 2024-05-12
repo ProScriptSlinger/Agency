@@ -117,6 +117,7 @@ function VideoBanner() {
                 size="large"
                 color="secondary"
                 className={classes.button}
+                href="/contact"
               >
                 {t("agency-landing.banner_button")}
                 <SendIcon className={classes.icon} />
