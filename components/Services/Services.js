@@ -17,47 +17,47 @@ const servicesList = [
   {
     title: "Kaax",
     desc: "An artificial intelligence system designed for the agricultural sector, currently in pilot testing phase. Interested companies can contact us to participate or learn more.",
-    img: "/images/services/no-one-cares.JPG",
+    img: "/images/services/no-one-cares.jpg",
   },
   {
     title: "Hunab Hub",
     desc: "A visitor management system ideal for high-traffic areas such as condominiums and event venues, enhancing control and security.",
-    img: "/images/services/hal-gatewood.JPG",
+    img: "/images/services/hal-gatewood.jpg",
   },
   {
     title: "Kaax Analytics",
     desc: " A data analytics tool that provides detailed insights for accurate and informed decision-making.",
-    img: "/images/services/path-digital.JPG",
+    img: "/images/services/path-digital.jpg",
   },
   {
     title: "IoT Implementation and Consulting",
     desc: " Offering both implementation and consulting services for Internet of Things (IoT) solutions to enable smart, connected environments for businesses.",
-    img: "/images/services/shubham-dhage.JPG",
+    img: "/images/services/shubham-dhage.jpg",
   },
   {
     title: "Blockchain Applications",
     desc: "Development of blockchain-based applications ensuring secure and transparent transactions across various fields.",
-    img: "/images/services/thisisengineering.JPG",
+    img: "/images/services/thisisengineering.jpg",
   },
   {
     title: "Software Development (Native Mobile)",
     desc: "Design and development of custom mobile applications for iOS and Android operating systems, maximizing performance and features.",
-    img: "/images/services/farzad.JPG",
+    img: "/images/services/farzad.jpg",
   },
   {
     title: "UX/UI Design",
     desc: "User-focused design ensuring that digital products are intuitive, aesthetically pleasing, and easy to navigate.",
-    img: "/images/services/ux-indonesia.JPG",
+    img: "/images/services/ux-indonesia.jpg",
   },
   {
     title: "Consulting",
     desc: "Consulting services in technology and innovation to help companies implement effective digital solutions and improve processes.",
-    img: "/images/services/luke-southern.JPG",
+    img: "/images/services/luke-southern.jpg",
   },
   {
     title: "Technical Support",
     desc: "Technical assistance and maintenance for systems and software, ensuring continuous and efficient operations for your business.",
-    img: "/images/services/christina-wocintechchat-com.JPG",
+    img: "/images/services/christina-wocintechchat-com.jpg",
   },
 ];
 
