@@ -24,7 +24,7 @@ const categories = [
 ];
 const caseData = [
   {
-    bg: "/images/studies/blockchain.jpg",
+    bg: "/images/studies/blockchain.JPG",
     logo: "/images/Isotipo_v4.png",
     title: "Blockchain Supply Chain",
     desc: "",
@@ -32,28 +32,28 @@ const caseData = [
     simple: false,
   },
   {
-    bg: "/images/studies/redesign.jpg",
+    bg: "/images/studies/redesign.JPG",
     logo: "/images/Isotipo_v4.png",
     title: "Web Development Redesign",
     desc: "Enhance user experience and boost conversions through website redesign.",
     size: "medium",
   },
   {
-    bg: "/images/studies/gamification.jpg",
+    bg: "/images/studies/gamification.JPG",
     logo: "/images/lIsotipo_v4.png",
     title: "Mobile App Gamification",
     desc: "Motivate users with gamified fitness app for health goals.",
     size: "medium",
   },
   {
-    bg: "/images/studies/city.jpg",
+    bg: "/images/studies/city.JPG",
     logo: "/images/Isotipo_v4.png",
     title: "Smart City IoT Implementation",
     desc: "Optimize energy use and enhance services with IoT sensors in smart cities.",
     size: "big",
   },
   {
-    bg: "/images/studies/ai.jpg",
+    bg: "/images/studies/ai.JPG",
     logo: "/images/Isotipo_v4.png",
     title: "Predictive Maintenance AI",
     desc: "Reduce downtime and costs with AI-based predictive maintenance.",
