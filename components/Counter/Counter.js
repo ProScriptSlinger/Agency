@@ -61,7 +61,8 @@ function Counter() {
               </div>
             </div>
           </Grid>
-          <Grid md={6} item>
+          <Grid md={2} item></Grid>
+          <Grid md={4} sm={6} item>
             <div className={classes.counterItem}>
               <div className={classes.text}>
                 <Typography variant="h3" className={text.title}>
@@ -73,7 +74,7 @@ function Counter() {
               </div>
             </div>
           </Grid>
-          <Grid md={6} item>
+          <Grid md={4} sm={6} item>
             <div className={classes.counterItem}>
               <div className={classes.text}>
                 <Typography variant="h3" className={text.title}>
@@ -85,6 +86,7 @@ function Counter() {
               </div>
             </div>
           </Grid>
+          <Grid md={2} item></Grid>
         </Grid>
       </Container>
     </div>

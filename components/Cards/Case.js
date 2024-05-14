@@ -24,7 +24,7 @@ function Case(props) {
       onClick={openPopup}
     >
       <span className={classes.figure}>
-        <img src={simple ? logo : bg} alt="img" />
+        <img src={bg} alt="img" />
       </span>
       <span className={cx(classes.property, simple && classes.fullHide)}>
         <span className={classes.title}>

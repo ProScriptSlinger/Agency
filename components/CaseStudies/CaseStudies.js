@@ -26,8 +26,8 @@ const caseData = [
   {
     bg: "/images/studies/blockchain.jpg",
     logo: "/images/Isotipo_v4.png",
-    title: "Blockchain Supply Chain",
-    desc: "",
+    title: "",
+    desc: "Blockchain Supply Chain: Using blockchain to improve supply chain management.",
     size: "small",
     simple: false,
   },

@@ -15,48 +15,48 @@ import DotsParallax from "../Parallax/Dots";
 
 const servicesList = [
   {
-    title: "Kaax",
-    desc: "An artificial intelligence system designed for the agricultural sector, currently in pilot testing phase. Interested companies can contact us to participate or learn more.",
+    title: "agency-landing.services_kaax_title",
+    desc: "agency-landing.services_kaax_desc",
     img: "/images/services/no-one-cares.jpg",
   },
   {
-    title: "Hunab Hub",
-    desc: "A visitor management system ideal for high-traffic areas such as condominiums and event venues, enhancing control and security.",
+    title: "agency-landing.services_hunab_title",
+    desc: "agency-landing.services_hunab_desc",
     img: "/images/services/hal-gatewood.jpg",
   },
   {
-    title: "Kaax Analytics",
-    desc: " A data analytics tool that provides detailed insights for accurate and informed decision-making.",
+    title: "agency-landing.services_anlytics_title",
+    desc: "agency-landing.services_anlytics_desc",
     img: "/images/services/path-digital.jpg",
   },
   {
-    title: "IoT Implementation and Consulting",
-    desc: " Offering both implementation and consulting services for Internet of Things (IoT) solutions to enable smart, connected environments for businesses.",
-    img: "/images/services/shubham-dhage.jpg",
-  },
-  {
-    title: "Blockchain Applications",
-    desc: "Development of blockchain-based applications ensuring secure and transparent transactions across various fields.",
+    title: "agency-landing.services_iot_title",
+    desc: "agency-landing.services_iot_desc",
     img: "/images/services/thisisengineering.jpg",
   },
   {
-    title: "Software Development (Native Mobile)",
-    desc: "Design and development of custom mobile applications for iOS and Android operating systems, maximizing performance and features.",
+    title: "agency-landing.services_blockchain_title",
+    desc: "agency-landing.services_blockchain_desc",
+    img: "/images/services/shubham-dhage.jpg",
+  },
+  {
+    title: "agency-landing.services_native_title",
+    desc: "agency-landing.services_native_desc",
     img: "/images/services/farzad.jpg",
   },
   {
-    title: "UX/UI Design",
-    desc: "User-focused design ensuring that digital products are intuitive, aesthetically pleasing, and easy to navigate.",
+    title: "agency-landing.services_ux_title",
+    desc: "agency-landing.services_ux_desc",
     img: "/images/services/ux-indonesia.jpg",
   },
   {
-    title: "Consulting",
-    desc: "Consulting services in technology and innovation to help companies implement effective digital solutions and improve processes.",
+    title: "agency-landing.services_consulting_title",
+    desc: "agency-landing.services_consulting_desc",
     img: "/images/services/luke-southern.jpg",
   },
   {
-    title: "Technical Support",
-    desc: "Technical assistance and maintenance for systems and software, ensuring continuous and efficient operations for your business.",
+    title: "agency-landing.services_tech_title",
+    desc: "agency-landing.services_tech_desc",
     img: "/images/services/christina-wocintechchat-com.jpg",
   },
 ];
@@ -121,8 +121,8 @@ function Services() {
             {servicesList.map((item, index) => (
               <div className={classes.item} key={index.toString()}>
                 <Card
-                  title={item.title}
-                  desc={item.desc}
+                  title={t(item.title)}
+                  desc={t(item.desc)}
                   img={item.img}
                   button={t("agency-landing.services_button")}
                 />
