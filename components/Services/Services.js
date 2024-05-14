@@ -15,39 +15,9 @@ import DotsParallax from "../Parallax/Dots";
 
 const servicesList = [
   {
-    title: "agency-landing.services_kaax_title",
-    desc: "agency-landing.services_kaax_desc",
-    img: "/images/services/no-one-cares.jpg",
-  },
-  {
-    title: "agency-landing.services_hunab_title",
-    desc: "agency-landing.services_hunab_desc",
-    img: "/images/services/hal-gatewood.jpg",
-  },
-  {
-    title: "agency-landing.services_anlytics_title",
-    desc: "agency-landing.services_anlytics_desc",
-    img: "/images/services/path-digital.jpg",
-  },
-  {
-    title: "agency-landing.services_iot_title",
-    desc: "agency-landing.services_iot_desc",
-    img: "/images/services/thisisengineering.jpg",
-  },
-  {
-    title: "agency-landing.services_blockchain_title",
-    desc: "agency-landing.services_blockchain_desc",
-    img: "/images/services/shubham-dhage.jpg",
-  },
-  {
-    title: "agency-landing.services_native_title",
-    desc: "agency-landing.services_native_desc",
-    img: "/images/services/farzad.jpg",
-  },
-  {
-    title: "agency-landing.services_ux_title",
-    desc: "agency-landing.services_ux_desc",
-    img: "/images/services/ux-indonesia.jpg",
+    title: "agency-landing.services_tech_title",
+    desc: "agency-landing.services_tech_desc",
+    img: "/images/services/christina-wocintechchat-com.jpg",
   },
   {
     title: "agency-landing.services_consulting_title",
@@ -55,9 +25,39 @@ const servicesList = [
     img: "/images/services/luke-southern.jpg",
   },
   {
-    title: "agency-landing.services_tech_title",
-    desc: "agency-landing.services_tech_desc",
-    img: "/images/services/christina-wocintechchat-com.jpg",
+    title: "agency-landing.services_ux_title",
+    desc: "agency-landing.services_ux_desc",
+    img: "/images/services/ux-indonesia.jpg",
+  },
+  {
+    title: "agency-landing.services_native_title",
+    desc: "agency-landing.services_native_desc",
+    img: "/images/services/farzad.jpg",
+  },
+  {
+    title: "agency-landing.services_blockchain_title",
+    desc: "agency-landing.services_blockchain_desc",
+    img: "/images/services/shubham-dhage.jpg",
+  },
+  {
+    title: "agency-landing.services_iot_title",
+    desc: "agency-landing.services_iot_desc",
+    img: "/images/services/thisisengineering.jpg",
+  },
+  {
+    title: "agency-landing.services_anlytics_title",
+    desc: "agency-landing.services_anlytics_desc",
+    img: "/images/services/path-digital.jpg",
+  },
+  {
+    title: "agency-landing.services_hunab_title",
+    desc: "agency-landing.services_hunab_desc",
+    img: "/images/services/hal-gatewood.jpg",
+  },
+  {
+    title: "agency-landing.services_kaax_title",
+    desc: "agency-landing.services_kaax_desc",
+    img: "/images/services/no-one-cares.jpg",
   },
 ];
 
