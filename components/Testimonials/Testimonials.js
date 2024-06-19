@@ -13,26 +13,26 @@ import useStyle from "./testi-style";
 
 const testiContent = [
   {
-    text: "Sed imperdiet enim ligula, vitae viverra justo porta vel.",
-    avatar: imgAPI.avatar[10],
-    name: "John Doe",
-    title: "Chief Digital Officer",
+    text: "En Ahau-X, fusionamos tradición agrícola y tecnología para llevar la producción a nuevas alturas.",
+    avatar: imgAPI.avatar[1],
+    name: "Claudia Gómez",
+    title: "CEO",
+    rating: 0,
+  },
+  {
+    text: "Artificial intelligence is invaluable, enhancing efficiency and effectiveness across all sectors.",
+    avatar: imgAPI.avatar[9],
+    name: "Esteban Rivas",
+    title: "COO",
+    rating: 0,
+  },
+  {
+    text: "I am delighted to recognize the Hunab and Kaax platform for their great ideas. ",
+    avatar: imgAPI.avatar[8],
+    name: "Abel Tony",
+    title: "Developer",
     rating: 5,
   },
-  // {
-  //   text: "Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.",
-  //   avatar: imgAPI.avatar[1],
-  //   name: "Jean Doe",
-  //   title: "Chief Digital Officer",
-  //   rating: 4,
-  // },
-  // {
-  //   text: "Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.",
-  //   avatar: imgAPI.avatar[2],
-  //   name: "Jena Doe",
-  //   title: "Graphic Designer",
-  //   rating: 4,
-  // },
 ];
 
 function Testimonials() {
