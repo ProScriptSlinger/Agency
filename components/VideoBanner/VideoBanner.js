@@ -126,7 +126,7 @@ function VideoBanner() {
                     <div className={classes.overlay} />
                     <div className={classes.video}>
                       {isDesktop && (
-                        <video autoPlay ref={videoRef} {...opts}>
+                        <video autoPlay ref={videoRef} {...opts} loop>
                           <source
                             src="/videos/Ahau-x Landing Page Video.mp4"
                             type="video/mp4"

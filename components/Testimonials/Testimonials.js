@@ -14,21 +14,21 @@ import useStyle from "./testi-style";
 const testiContent = [
   {
     text: "En Ahau-X, fusionamos tradición agrícola y tecnología para llevar la producción a nuevas alturas.",
-    avatar: imgAPI.avatar[1],
+    avatar: imgAPI.avatar[0],
     name: "Claudia Gómez",
     title: "CEO",
     rating: 0,
   },
   {
     text: "Artificial intelligence is invaluable, enhancing efficiency and effectiveness across all sectors.",
-    avatar: imgAPI.avatar[9],
+    avatar: imgAPI.avatar[1],
     name: "Esteban Rivas",
     title: "COO",
     rating: 0,
   },
   {
     text: "I am delighted to recognize the Hunab and Kaax platform for their great ideas. ",
-    avatar: imgAPI.avatar[8],
+    avatar: imgAPI.avatar[2],
     name: "Abel Tony",
     title: "Developer",
     rating: 5,

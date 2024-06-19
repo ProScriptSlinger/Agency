@@ -2,5 +2,12 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/[locale]": "pages/[locale].js"
+  "/404": "pages/404.js",
+  "/blank-page": "pages/blank-page.js",
+  "/": "pages/index.js",
+  "/contact": "pages/contact.js",
+  "/[locale]/blank-page": "pages/[locale]/blank-page.js",
+  "/[locale]": "pages/[locale].js",
+  "/[locale]/contact": "pages/[locale]/contact.js",
+  "/[locale]/404": "pages/[locale]/404.js"
 }
