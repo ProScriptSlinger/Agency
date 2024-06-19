@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import Container from "@mui/material/Container";
@@ -13,12 +13,12 @@ import Grid from "@mui/material/Grid";
 import { useTranslation } from "next-i18next";
 import { useText } from "~/theme/common";
 import imgApi from "~/public/images/imgAPI";
-import yt from "~/youtube";
 import useStyles from "./banner-style";
 
 function VideoBanner() {
   // Theme breakpoints
   const theme = useTheme();
+  const videoRef = useRef(null);
   const { classes: text } = useText();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
   const isTablet = useMediaQuery(theme.breakpoints.up("sm"));
@@ -28,9 +28,7 @@ function VideoBanner() {
   const { t } = useTranslation("common");
 
   // Youtube player
-  const [play, setPlayed] = useState(false);
-  const [playCtrl, setPlayedCtrl] = useState(true);
-  const [player, setPlayer] = useState([]);
+  const [isPlaying, setPlaying] = useState(false);
   const { classes, cx } = useStyles();
 
   useEffect(() => {
@@ -47,30 +45,13 @@ function VideoBanner() {
     }
   }, []);
 
-  const _onEnd = (event) => {
-    event.target.playVideo();
-  };
-
-  const _onPlay = () => {
-    const curTime = player[0].getCurrentTime();
-    if (curTime > 0) {
-      setPlayed(true);
-      setPlayedCtrl(true);
-    }
-  };
-
-  const _onReady = (event) => {
-    player.push(event.target);
-    setPlayer(player);
-  };
-
-  const _onTogglePause = () => {
-    setPlayedCtrl(!playCtrl);
-    if (playCtrl) {
-      player[0].pauseVideo();
+  const handlePlay = () => {
+    if (isPlaying) {
+      videoRef.current.pause();
     } else {
-      player[0].playVideo();
+      videoRef.current.play();
     }
+    setPlaying(!isPlaying);
   };
 
   const opts = {
@@ -132,29 +113,26 @@ function VideoBanner() {
                     {isDesktop && (
                       <IconButton
                         className={classes.btnPlay}
-                        onClick={_onTogglePause}
+                        onClick={handlePlay}
                         size="large"
                       >
-                        {playCtrl ? <PauseIcon /> : <PlayIcon />}
+                        {isPlaying ? <PauseIcon /> : <PlayIcon />}
                       </IconButton>
                     )}
-                    {!play || isMobile ? (
+                    {!isPlaying || isMobile ? (
                       <img width={400} src="/images/dash_bg.png" alt="cover" />
                     ) : null}
                     <div className={classes.overlay} />
-                    {yt.use && (
-                      <div className={classes.video}>
-                        {isDesktop && (
-                          <YouTube
-                            videoId="rX2T9jH0OxA"
-                            opts={opts}
-                            onReady={_onReady}
-                            onEnd={_onEnd}
-                            onPlay={_onPlay}
-                          />
-                        )}
-                      </div>
-                    )}
+                    <div className={classes.video}>
+                      {isDesktop && (
+                        <video autoPlay ref={videoRef} {...opts}>
+                          <source
+                            src="/videos/Ahau-x Landing Page Video.mp4"
+                            type="video/mp4"
+                          ></source>
+                        </video>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>

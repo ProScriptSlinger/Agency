@@ -79,18 +79,34 @@ function Footer(props) {
               {brand.agency.projectName}
             </Typography> */}
           </div>
-          <Typography
-            color="textPrimary"
-            className={classes.footerDesc}
-            gutterBottom
-          >
-            {t("agency-landing.footer_paragraph")}
-          </Typography>
-          {isDesktop && <Copyright />}
         </Grid>
         <Grid item xs={12} md={6}>
           <Grid container spacing={4} justify-content="space-evenly">
-            {footers.map((footer) => (
+            <Grid
+              item
+              xs={12}
+              md={8}
+              key={"description"}
+              className={classes.siteMapItem}
+            >
+              <Typography
+                color="textPrimary"
+                className={classes.footerDesc}
+                gutterBottom
+              >
+                {t("agency-landing.footer_paragraph")}
+              </Typography>
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              md={4}
+              key={"copy-right"}
+              className={classes.siteMapItem}
+            >
+              {isDesktop && <Copyright />}
+            </Grid>
+            {/* {footers.map((footer) => (
               <Grid
                 item
                 xs={12}
@@ -160,22 +176,25 @@ function Footer(props) {
                   </Accordion>
                 )}
               </Grid>
-            ))}
+            ))} */}
           </Grid>
         </Grid>
         <Grid item xs={12} md={3}>
           <div className={classes.socmed}>
-            <IconButton aria-label="FB" className={classes.margin} size="small">
-              <i className="ion-logo-twitter" />
-            </IconButton>
             <IconButton aria-label="TW" className={classes.margin} size="small">
-              <i className="ion-logo-facebook" />
+              <a href="https://www.facebook.com/people/Ahau-X/61554255282427/">
+                <i className="ion-logo-facebook" />
+              </a>
             </IconButton>
             <IconButton aria-label="IG" className={classes.margin} size="small">
-              <i className="ion-logo-instagram" />
+              <a href="https://www.instagram.com/ahau.x_/?igsh=cGJmM3JhbWpmMWoy">
+                <i className="ion-logo-instagram" />
+              </a>
             </IconButton>
             <IconButton aria-label="LI" className={classes.margin} size="small">
-              <i className="ion-logo-linkedin" />
+              <a href="https://www.linkedin.com/company/ahau-x">
+                <i className="ion-logo-linkedin" />
+              </a>
             </IconButton>
           </div>
           <SelectLang toggleDir={toggleDir} />
