@@ -31,7 +31,7 @@ const testiContent = [
     avatar: imgAPI.avatar[2],
     name: "Abel Tony",
     title: "Developer",
-    rating: 5,
+    rating: 0,
   },
 ];
 
